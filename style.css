@@ -12,12 +12,12 @@ button {
     padding: 0;
 }
 
-button:active {
-  transform: scale(0.99);
+button:hover{
+    transform: scale(1.1);
 }
 
-button:hover{
-    transform: 0.1;
+button:active {
+    transform: scale(0.99);
 }
 
 .mate{
@@ -25,6 +25,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    transition: all 0.5s ease;
 }
 
 h1{
