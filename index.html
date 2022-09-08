@@ -4,18 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/favicon.ico">
     <title>Mate Clicker</title>
 </head>
 <body>
-        <h1 id="contador"></h1>
-    <img id="mate" src="./img/mate.png" onclick="clic();"/>
-    <br><br>
-    <button onclick="comprar(0);">Cursor 100</button>
-    <button onclick="comprar(1);">Medialuna 500</button>
-    <button onclick="comprar(2);">Pizza 2000</button>
+    <h1 class="mt-3" id="contador"></h1>
+    <div class="d-flex align-items-center justify-content-evenly ">  
+        <img id="mate" src="./img/mate.png" onclick="clic();"/>
+        <div class="m-5 d-flex flex-row-reverse fuente" id="inventario"></div>
+    </div>
+    
+    <div class="d-flex justify-content-evenly align-items-center mt-5 text-center">
+        <div class="mt-2">
+            <button class="btn btn-outline-dark" type="button" onclick="comprar(0);"><img class="mejora" src="./img/cursor.png" alt=""></button>
+            <h3>Cursor</h3>
+            <p>$100 mates</p>
+            <p>Produce 1/mps</p>
+        </div>
+        <div>
+            <button class="btn btn-outline-dark" type="button" onclick="comprar(1);"><img class="mejora" src="./img/medialuna.png" alt=""></button>
+            <h3>Medialuna</h3>
+            <p>$500 mates</p>
+            <p>Produce 2/mps</p>
+        </div>
+        <div>
+            <button class="btn btn-outline-dark" type="button" onclick="comprar(2);"><img class="mejora" src="./img/galleta.png" alt=""></button>
+            <h3>Galleta</h3>
+            <p>$2000 mates</p>
+            <p>Produce 5/mps</p>
+        </div>
+        <div>
+            <button class="btn btn-outline-dark" type="button" onclick="comprar(3);"><img class="mejora" src="./img/torta.png" alt=""></button>
+            <h3>Torta</h3>
+            <p>$10000 mates</p>
+            <p>Produce 10/mps</p>
+        </div>
+        <div>
+            <button class="btn btn-outline-dark" type="button" onclick="comprar(4);"><img class="mejora" src="./img/pancake.png" alt=""></button>
+            <h3>Pancake</h3>
+            <p>$200000 mates</p>
+            <p>Produce 25/mps</p>
+        </div>
+        <div>
 
-    <div id="inventario"></div>
+            <button class="btn btn-outline-dark" type="button" onclick="comprar(5);"><img class="mejora" src="./img/pizza.png" alt=""></button>
+            <h3>Pizza</h3>
+            <p>$1000000 mates</p>
+            <p>Produce 50/mps</p>
+        </div>
+    </div>   
+
     <script src="app.js"></script>
 </body>
 </html>

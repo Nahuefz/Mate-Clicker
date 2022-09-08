@@ -1,8 +1,8 @@
 let mates = 0;
 
-let inventario = [0,0,0];
-let matesProduce = [1,2,5];
-let precioProducto = [100, 500, 2000];
+let inventario = [0,0,0,0,0,0];
+let matesProduce = [1,2,5,10,25,50];
+let precioProducto = [100, 500, 2000, 10000, 200000, 1000000];
 
 function clic(){
     mates++;
@@ -29,7 +29,10 @@ function render(){
     document.getElementById("inventario").innerHTML = 
     `Cursores: ${inventario[0]}<br>
      Medialunas: ${inventario[1]}<br>
-     Pizza: ${inventario[2]}<br>
+     Galleta: ${inventario[2]}<br>
+     Torta: ${inventario[3]}<br>
+     Pancake: ${inventario[4]}<br>
+     Pizza: ${inventario[5]}<br>
     `;
 }
 
